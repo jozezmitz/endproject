@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JUST SOME FUN CODES I FOUND</title>
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="Theme2.css" />
+  <link rel="stylesheet" href="includes/Rotating_cube.css" />
+  <link rel="stylesheet" href="includes/tourist_cards.css" />
+  <script src="navbarhamburger.js" defer></script>
+</head>
+<body>
+<div id="page-wrapper">
+  <div id="container01">
+    <div class="container">
+      <div class="center">
+        <div id="navbar"></div>
+        <script>
+          (async () => {
+            const response = await fetch('includes/navbar.html');
+            const html = await response.text();
+            document.getElementById('navbar').innerHTML = html;
+          })();
+        </script>
+<h1 id="main-content">Just some fun codes I found</h1>
+        <div id="body01">
+          <div><H1>Rotating cube</h1>
+            <div class="containerRC">
+              <div class="box-card">
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+                <div class="face right">Right</div>
+                <div class="face left">Left</div>
+                <div class="face top">Top</div>
+                <div class="face bottom">Bottom</div>
+              </div>    
+            </div>
+          </div>
+        </div>
+            <div class="body02">
+                    <h1><span style="color: #ff9f43">Tou</span><span style="color: #0abde3">rist</span> <span style="color: #ee5253">Attr</span><span style="color: #00d2d3">acti<span><span style="color: #5f27cd">ons<span></h1>
+              <div class="card1">
+                <img src="http://www.pngmart.com/files/5/Pyramids-PNG-HD.png" alt="pramid">
+                <h3>Pyramids</h3>
+                <p>The Egyptian pyramids are ancient pyramid-shaped masonry structures located in Egypt. As of November 2008, sources cite either 118 or 138 as the number of identified Egyptian pyramids.</p>
+              </div>
+              <div class="card2">
+                <img src="https://wallazee.global.ssl.fastly.net/images/dynamic/items/383-1024.png" alt="Eiffel Tower">
+                <h3>Statue of Liberty</h3>
+                <p>The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, in the United States.</p>
+              </div>
+              <div class="card3">
+                <img src="http://pluspng.com/img-png/download-taj-mahal-png-images-transparent-gallery-advertisement-1185.png" alt="">
+                <h3>Taj Mahal</h3>
+                <p>The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor.</p>
+              </div>
+            </div>  
+        </div>
+      </div>  
+  </div>
+</div>
+<div id="footer"></div>
+        <script>
+          (async () => {
+            const response = await fetch('includes/footer.html');
+            const html = await response.text();
+            document.getElementById('footer').innerHTML = html;
+          })();
+        </script>
+</div>
+</body>
+</html>

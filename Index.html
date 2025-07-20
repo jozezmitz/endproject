@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyWebsiteBuildEndProject</title>
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="Theme2.css" />
+  <link rel="stylesheet" href="includes/Lightbox.css" />
+  <script src="navbarhamburger.js" defer></script>
+</head>
+<body>
+<div id="page-wrapper">
+  <div id="container01">
+    <div class="container">
+      <div class="left"><h2>Left Pane</h2></div>
+
+      <div class="center">
+        <!-- Load navbar dynamically -->
+        <div id="navbar"></div>
+        <script>
+          (async () => {
+            const response = await fetch('includes/navbar.html');
+            const html = await response.text();
+            document.getElementById('navbar').innerHTML = html;
+          })();
+        </script>
+        <h1 id="main-content">Welcome to My Webdesign End Project</h1>
+  <div class="shadow-box-wrapper">
+<div class="shadow-box_AA">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod, urna nec ultricies commodo, velit libero interdum enim, sit amet sodales purus nulla nec felis. Ut imperdiet fringilla dui eu pulvinar. Donec molestie interdum tempus. Duis finibus dolor magna, eu rutrum risus faucibus in. Morbi maximus et libero vitae imperdiet. Morbi varius ornare turpis a luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec auctor blandit mi vel molestie. Fusce faucibus urna nec elit viverra tempor. Mauris sit amet pharetra nisl, et eleifend mauris. Quisque eget erat non enim ultrices lobortis. Sed tristique sodales auctor. Integer posuere felis ut sem tempor vehicula. Ut finibus lectus sed scelerisque cursus. Curabitur commodo lorem lorem, non pulvinar orci fringilla id. Vestibulum blandit risus justo, a varius massa hendrerit non.</div>
+<div class="shadow-box_AA">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod, urna nec ultricies commodo, velit libero interdum enim, sit amet sodales purus nulla nec felis. Ut imperdiet fringilla dui eu pulvinar. Donec molestie interdum tempus. Duis finibus dolor magna, eu rutrum risus faucibus in. Morbi maximus et libero vitae imperdiet. Morbi varius ornare turpis a luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec auctor blandit mi vel molestie. Fusce faucibus urna nec elit viverra tempor. Mauris sit amet pharetra nisl, et eleifend mauris. Quisque eget erat non enim ultrices lobortis. Sed tristique sodales auctor. Integer posuere felis ut sem tempor vehicula. Ut finibus lectus sed scelerisque cursus. Curabitur commodo lorem lorem, non pulvinar orci fringilla id. Vestibulum blandit risus justo, a varius massa hendrerit non.</div>
+  </div>
+<div id="marquee-content"></div>
+        <script>
+          (async () => {
+            const response = await fetch('includes/marquees.html');
+            const html = await response.text();
+            document.getElementById('marquee-content').innerHTML = html;
+          })();
+        </script>
+          <div class="shadow-box-wrapper_BBB">
+<div class="shadow-box_BBB"><img src="image/L-pexels-simon73-1323550.png" alt="beautiful view"></div>
+<div class="shadow-box_BBB"><img src="image/L-pexels-simon73-1323550.png" alt="beautiful view"></div>
+<div class="shadow-box_BBB"><img src="image/L-pexels-simon73-1323550.png" alt="beautiful view"></div>
+          </div><br>
+          <div class="loader"><Br><p style="text-align: center;">HELP</p></div>
+            <div class="shadow-box_AA"><h2 style="text-align:center">Lightbox</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="image/H-pexels-alex-andrews-271121-861443.png" alt="beautiful view 01" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="image/H-pexels-eberhardgross-1367105.png" alt="beautiful view 04" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="image/H-pexels-egos68-1906658.png" alt="beautiful view 03" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="image/H-pexels-sebastian-palomino-933481-1955134.png" alt="beautiful view 02"style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="image/H-pexels-alex-andrews-271121-861443.png" alt="beautiful view 01" style="max-height: 1000px; width:auto;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="image/H-pexels-eberhardgross-1367105.png" alt="beautiful view 0" style="max-height:1000px; width:auto;">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="image/H-pexels-egos68-1906658.png" alt="beautiful view 01" style="max-height:1000px; width:auto;">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="image/H-pexels-sebastian-palomino-933481-1955134.png" alt="beautiful view xx" style="max-height:1000px; width:auto;">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image/H-pexels-alex-andrews-271121-861443.png" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image/H-pexels-eberhardgross-1367105.png" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image/H-pexels-egos68-1906658.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image/H-pexels-sebastian-palomino-933481-1955134.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+            </div>
+     </div>
+      <div class="right"><H2>Right Pane</H2>
+    </div>
+</div>
+</div>
+<div id="footer"></div>
+        <script>
+          (async () => {
+            const response = await fetch('includes/footer.html');
+            const html = await response.text();
+            document.getElementById('footer').innerHTML = html;
+          })();
+        </script>
+</div>
+<script src="includes/lightbox.js"></script>
+</body>
+</html>

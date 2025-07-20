@@ -1,0 +1,77 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1%;
+}   
+
+.custom-nav li {
+  display: inline-block;
+  background-color: #0b4395;
+  text-align: center;
+  font-weight: bold;
+  font-style: oblique;
+  width: 300px; 
+  padding: 5px;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  border: ridge;
+  margin-top: 1%;
+}
+
+nav a {
+  display: inline-block;
+  width: 80%;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: #0b4395;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  border: ridge;    
+  color: rgb(247, 243, 243);
+  translate: 0 -100%;
+  transition: translate 150ms ease-in-out;
+}
+
+.skip-link:focus {
+  translate: 0;
+}
+
+.language-wrapper {
+  display: inline-block;
+  width: 300px;
+  padding: 5px;
+  background-color: #0b4395;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  border: ridge;
+  margin-top: 1%;
+}
+
+#language-picker {
+  width: 100%;
+  padding: 5px;
+  background-color: transparent;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-style: oblique;
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#language-picker option {
+  background-color: white;
+  color: black;
+}

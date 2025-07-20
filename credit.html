@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyWebsiteBuildEndProject</title>
+
+  <!-- Include styles -->
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="Theme2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Include JavaScript -->
+  <script src="navbarhamburger.js" defer></script>
+<style>
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: #0056b3;
+}
+</style>
+
+</head>
+<body>
+<div id="page-wrapper">
+  <div id="container01">
+    <div class="container">
+      <div class="center">
+        <!-- Load navbar dynamically -->
+        <div id="navbar"></div>
+        <script>
+          (async () => {
+            const response = await fetch('includes/navbar.html');
+            const html = await response.text();
+            document.getElementById('navbar').innerHTML = html;
+          })();
+        </script>
+        <h1 id="main-content">Welcome to My Webdesign End Project</h1>
+        <br>
+        <h3><div class="button-link" a href="https://www.pexels.com" title="Photos from Pexels">Photos</a></h3><br>
+        <h3><div class="button-link"a href="https://lokeshdhakar.com" title="lightbox">Lightbox</a></h3><br>
+        <h3><div class="button-link"a href="www.flaticon.com" title="Icons Flaticon">Icons from flaticon</a></h3><br>
+        <h3><div class="button-link"a href="https://www.flaticon.com/free-icons/nap" title="nap icons">Nap icons created by Siipkan Creative - Flaticon</a></h3><br>
+        <h3><div class="button-link"a href="https://www.flaticon.com/free-icons/halloween" title="halloween icons">Halloween icons created by Chanut-is-Industries - Flaticon</a></h3><br>
+        <h3><div class="button-link"a href="https://www.flaticon.com/free-icons/black-cat" title="black cat icons">Black cat icons created by Chanut-is-Industries - Flaticon</a></h3><br>
+        <h3><div class="button-link"a href="https://prismic.io/blog/css-hover-effects" title="hover effect">hover over effects</a></h3><br>
+                <div id="footer"></div>
+                <script>
+                (async () => {
+                    const response = await fetch('includes/footer.html');
+                    const html = await response.text();
+                    document.getElementById('footer').innerHTML = html;
+                })();
+                </script>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
